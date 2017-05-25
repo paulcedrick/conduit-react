@@ -3,7 +3,7 @@ import React from "react";
 const ArticlePreview = ({imgUrl = '', authorName, publishedDate, likes = 0, children}) => (
   <div className="article-preview">
     <div className="article-meta">
-      <a href="profile.html"><img src={imgUrl} /></a>
+      <a href="profile.html"><img src={imgUrl} alt={imgUrl} /></a>
       <div className="info">
         <a href="" className="author">{authorName}</a>
         <span className="date">{publishedDate}</span>
